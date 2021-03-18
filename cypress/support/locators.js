@@ -16,3 +16,5 @@ const locators = {
     BTN_CRIAR: '.actions > input'
   }
 }
+
+export default locators;
