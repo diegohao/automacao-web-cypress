@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import loc from "./locators"
+
+Cypress.Commands.add('acessarCriarUsuarios', () => {
+    cy.visit('https://automacaocombatista.herokuapp.com/treinamento/home')
+    cy.contains('Formulário').click()
+    cy.get(loc.MENU.FORMULARIO.CRIAR_USUARIOS).click()
+})
