@@ -1,7 +1,8 @@
 const locators = {
   MENU: {
     FORMULARIO: {
-      CRIAR_USUARIOS: '.active > .collapsible-body > ul > :nth-child(1) > a'
+      CRIAR_USUARIOS: '.active > .collapsible-body > ul > :nth-child(1) > a',
+      LISTA_DE_USUARIOS: '.active > .collapsible-body > ul > :nth-child(2) > a'
     }
   },
   CRIAR_USUARIOS: {
