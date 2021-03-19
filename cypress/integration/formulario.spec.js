@@ -47,4 +47,26 @@ describe('Teste funcional do formulário', () => {
     
         cy.get('#error_explanation > ul > li').should('contain', 'email.invalid')    
     })
+
+    it.only('Visualizar usuário', () => {
+        cy.acessarListaDeUsuários()
+        cy.get(loc.VISUALIZAR_USUARIOS.BTN_VISUALIZAR).click()
+        cy.get(loc.VISUALIZAR_USUARIOS.NOME).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.ULTIMO_NOME).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.EMAIL).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.ENDERECO).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.UNIVERSIDADE).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.PROFISSAO).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.GENERO).should('exist')
+        cy.get(loc.VISUALIZAR_USUARIOS.IDADE).should('exist')
+        // TO DO: clicar no botão Voltar.
+    })
+
+    it('Editar usuário', () => {
+        
+    })
+
+    it('Excluir usuário', () => {
+        
+    })
 })

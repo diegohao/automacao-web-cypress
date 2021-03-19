@@ -31,3 +31,10 @@ Cypress.Commands.add('acessarCriarUsuarios', () => {
     cy.contains('Formulário').click()
     cy.get(loc.MENU.FORMULARIO.CRIAR_USUARIOS).click()
 })
+
+Cypress.Commands.add('acessarListaDeUsuários', () => {
+    cy.visit('https://automacaocombatista.herokuapp.com/treinamento/home')
+    cy.contains('Formulário').click()
+    cy.get(loc.MENU.FORMULARIO.LISTA_DE_USUARIOS).click()
+    cy.get('.tamanhodiv2 > .center').should('contain', 'Lista de Usuários')
+})
