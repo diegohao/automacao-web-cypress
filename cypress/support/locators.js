@@ -26,7 +26,19 @@ const locators = {
     PROFISSAO: ':nth-child(6) > strong',
     GENERO: ':nth-child(5) > strong',
     IDADE: ':nth-child(7) > strong',
-    BTN_VOLTAR: ':nth-child(7) > strong'
+    BTN_VOLTAR: '.red'
+  },
+  EDITAR_USUARIOS: {
+    BTN_EDITAR: ':nth-child(1) > :nth-child(10) > .material-icons',
+    NOME: '#user_name',
+    ULTIMO_NOME: '#user_lastname',
+    EMAIL: '#user_email',
+    ENDERECO: '#user_address',
+    UNIVERSIDADE: '#user_university',
+    PROFISSAO: '#user_profile',
+    GENERO: '#user_gender',
+    IDADE: '#user_age',
+    BTN_CRIAR: '.actions > input'
   }
 }
 
