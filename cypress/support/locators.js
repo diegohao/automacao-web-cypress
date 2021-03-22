@@ -3,6 +3,15 @@ const locators = {
     FORMULARIO: {
       CRIAR_USUARIOS: '.active > .collapsible-body > ul > :nth-child(1) > a',
       LISTA_DE_USUARIOS: '.active > .collapsible-body > ul > :nth-child(2) > a'
+    },
+    BUSCA_DE_ELEMENTOS: {
+      LINKS: '.active > .collapsible-body > ul > :nth-child(1) > a',
+      INPUTS_E_TEXTFIELD: '.active > .collapsible-body > ul > :nth-child(2) > a',
+      BOTOES: '.active > .collapsible-body > ul > :nth-child(3) > a',
+      RADIO_E_CHECKBOX: '.active > .collapsible-body > ul > :nth-child(4) > a',
+      DROPDOWN_E_SELECT: '.collapsible-body > ul > :nth-child(5) > a',
+      TEXTOS: '.collapsible-body > ul > :nth-child(6) > a',
+      TABELA: ':nth-child(7) > a'
     }
   },
   CRIAR_USUARIOS: {
