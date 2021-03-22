@@ -84,9 +84,9 @@ describe('Teste funcional do formulário', () => {
         cy.get('.row.center').should('contain', 'Seu Usuário foi Atualizado!')
     })
 
-    it('Excluir usuário', () => {
+    it.only('Excluir usuário', () => {
         cy.acessarListaDeUsuários()
-        cy.get(':nth-child(1) > :nth-child(11) > .material-icons').click()
+        cy.get(loc.EXCLUIR_USUARIOS.BTN_EXCLUIR).click()
         // TO DO: validar alert.        
     })
 })

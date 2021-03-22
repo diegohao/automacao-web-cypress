@@ -39,6 +39,9 @@ const locators = {
     GENERO: '#user_gender',
     IDADE: '#user_age',
     BTN_CRIAR: '.actions > input'
+  },
+  EXCLUIR_USUARIOS: {
+    BTN_EXCLUIR: ':nth-child(1) > :nth-child(11) > .material-icons'
   }
 }
 
