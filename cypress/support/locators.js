@@ -51,6 +51,13 @@ const locators = {
   },
   EXCLUIR_USUARIOS: {
     BTN_EXCLUIR: ':nth-child(1) > :nth-child(11) > .material-icons'
+  },
+  LINKS: {
+    SUCCESS: ':nth-child(3) > :nth-child(1) > a',
+    BAD_REQUEST: ':nth-child(4) > :nth-child(1) > a',
+    PAGE_NOT_FOUND: ':nth-child(3) > :nth-child(2) > a',
+    INTERNAL_SERVER_ERROR: ':nth-child(4) > :nth-child(2) > a',
+    MENSAGEM: '.red-text'
   }
 }
 
