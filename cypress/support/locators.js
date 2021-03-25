@@ -58,6 +58,13 @@ const locators = {
     PAGE_NOT_FOUND: ':nth-child(3) > :nth-child(2) > a',
     INTERNAL_SERVER_ERROR: ':nth-child(4) > :nth-child(2) > a',
     MENSAGEM: '.red-text'
+  },
+  BOTOES: {
+    RAISED: '#teste',
+    FLOATING: '.btn-floating',
+    FLAT: '.row > .waves-teal',
+    SUBMIT: ':nth-child(6) > :nth-child(1) > .row > .btn',
+    DISABLE: ':nth-child(7) > .s6 > .row'
   }
 }
 

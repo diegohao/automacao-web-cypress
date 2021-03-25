@@ -31,4 +31,38 @@ describe('Teste funcional na busca de elementos', () => {
         cy.get(loc.LINKS.INTERNAL_SERVER_ERROR).click()
         cy.get(loc.LINKS.MENSAGEM).should('contain', 'Server Error')
     })
+
+    it('Validar botão Raised', () => {
+        cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
+        cy.get(loc.BOTOES.RAISED).click()
+        cy.get('#div1 > h5').should('contain', 'Você Clicou no Botão')
+        cy.reload()
+    })
+
+    it('Validar botão Floating', () => {
+        cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
+        cy.get(loc.BOTOES.FLOATING).click()
+        cy.get('#div2 > h5').should('contain', 'Você Clicou no Botão')
+        cy.reload()
+    })
+
+    it('Validar botão Flat', () => {
+        cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
+        cy.get(loc.BOTOES.FLAT).click()
+        cy.get('#div3 > h5').should('contain', 'Você Clicou no Botão')
+        cy.reload()
+    })
+
+    it('Validar botão Submit', () => {
+        cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
+        cy.get(loc.BOTOES.SUBMIT).click()
+        cy.get('#div4 > h5').should('contain', 'Você Clicou no Botão')
+        cy.reload()
+    })
+
+    it('Validar botão Disable', () => {
+        cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
+        cy.get(loc.BOTOES.DISABLE).click()
+        cy.get('.s9 > :nth-child(7)').should('not.have.value')
+    })
 })
