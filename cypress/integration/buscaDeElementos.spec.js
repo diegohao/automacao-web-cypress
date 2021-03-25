@@ -35,34 +35,34 @@ describe('Teste funcional na busca de elementos', () => {
     it('Validar botão Raised', () => {
         cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
         cy.get(loc.BOTOES.RAISED).click()
-        cy.get('#div1 > h5').should('contain', 'Você Clicou no Botão')
+        cy.get(loc.BOTOES.MSG_RAISED).should('contain', 'Você Clicou no Botão')
         cy.reload()
     })
 
     it('Validar botão Floating', () => {
         cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
         cy.get(loc.BOTOES.FLOATING).click()
-        cy.get('#div2 > h5').should('contain', 'Você Clicou no Botão')
+        cy.get(loc.BOTOES.MSG_FLOATING).should('contain', 'Você Clicou no Botão')
         cy.reload()
     })
 
     it('Validar botão Flat', () => {
         cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
         cy.get(loc.BOTOES.FLAT).click()
-        cy.get('#div3 > h5').should('contain', 'Você Clicou no Botão')
+        cy.get(loc.BOTOES.MSG_FLAT).should('contain', 'Você Clicou no Botão')
         cy.reload()
     })
 
     it('Validar botão Submit', () => {
         cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
         cy.get(loc.BOTOES.SUBMIT).click()
-        cy.get('#div4 > h5').should('contain', 'Você Clicou no Botão')
+        cy.get(loc.BOTOES.MSG_SUBMIT).should('contain', 'Você Clicou no Botão')
         cy.reload()
     })
 
     it('Validar botão Disable', () => {
         cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.BOTOES).click()
         cy.get(loc.BOTOES.DISABLE).click()
-        cy.get('.s9 > :nth-child(7)').should('not.have.value')
+        cy.get(loc.BOTOES.MSG_DISABLE).should('not.have.value')
     })
 })
