@@ -64,7 +64,12 @@ const locators = {
     FLOATING: '.btn-floating',
     FLAT: '.row > .waves-teal',
     SUBMIT: ':nth-child(6) > :nth-child(1) > .row > .btn',
-    DISABLE: ':nth-child(7) > .s6 > .row'
+    DISABLE: ':nth-child(7) > .s6 > .row',
+    MSG_RAISED: '#div1 > h5',
+    MSG_FLOATING: '#div2 > h5',
+    MSG_FLAT: '#div3 > h5',
+    MSG_SUBMIT: '#div4 > h5',
+    MSG_DISABLE: '.s9 > :nth-child(7)'
   }
 }
 
