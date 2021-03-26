@@ -65,4 +65,34 @@ describe('Teste funcional na busca de elementos', () => {
         cy.get(loc.BOTOES.DISABLE).click()
         cy.get(loc.BOTOES.MSG_DISABLE).should('not.have.value')
     })
+    
+    it('Validar radioButton red', () => {
+    })
+  
+    it('Validar radioButton blue', () => {
+    })
+  
+    it('Validar radioButton yellow', () => {
+    })
+  
+    it('Validar radioButton green', () => {
+    })
+  
+    it('Validar checkBox purple', () => {
+    })
+  
+    it('Validar checkBox grey', () => {
+    })
+  
+    it('Validar checkBox purple e grey', () => {
+    })
+  
+    it('Validar checkBox black', () => {
+    })
+  
+    it('Validar checkBox white', () => {
+    })
+  
+    it('Validar checkBox black e white', () => {
+    })
 })
