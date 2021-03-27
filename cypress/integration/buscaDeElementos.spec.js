@@ -102,7 +102,13 @@ describe('Teste funcional na busca de elementos', () => {
         })
     })
   
-    it('Validar checkBox purple', () => {
+    it.only('Validar checkBox purple', () => {
+        cy.acessarRadioECheckbox()
+        cy.get(loc.RADIO_E_CHECKBOX.PURPLE).should('not.be.checked').then((checkPurple) => {
+            if(checkPurple) {
+                cy.get(checkPurple).check()
+            }
+        })
     })
   
     it('Validar checkBox grey', () => {
