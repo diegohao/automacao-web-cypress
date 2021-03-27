@@ -70,6 +70,16 @@ const locators = {
     MSG_FLAT: '#div3 > h5',
     MSG_SUBMIT: '#div4 > h5',
     MSG_DISABLE: '.s9 > :nth-child(7)'
+  },
+  RADIO_E_CHECKBOX: {
+    RED: 'form > :nth-child(2) > label',
+    BLUE: 'form > :nth-child(3) > label',
+    YELLOW: 'form > :nth-child(5) > label',
+    GREEN: 'form > :nth-child(6) > label',
+    PURPLE: ':nth-child(2) > :nth-child(2) > label',
+    GREY: ':nth-child(2) > :nth-child(3) > label',
+    BLACK: ':nth-child(2) > :nth-child(5) > label',
+    WHITE: ':nth-child(2) > :nth-child(6) > label'
   }
 }
 

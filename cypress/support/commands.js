@@ -30,3 +30,10 @@ Cypress.Commands.add('acessarListaDeUsuários', () => {
     cy.get(loc.MENU.FORMULARIO.LISTA_DE_USUARIOS).click()
     cy.get('.tamanhodiv2 > .center').should('contain', 'Lista de Usuários')
 })
+
+Cypress.Commands.add('acessarRadioECheckbox', () => {
+    cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.RADIO_E_CHECKBOX).click()
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false
+    })
+})

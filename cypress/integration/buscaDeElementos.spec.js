@@ -67,15 +67,39 @@ describe('Teste funcional na busca de elementos', () => {
     })
     
     it('Validar radioButton red', () => {
+        cy.acessarRadioECheckbox()
+        cy.get(loc.RADIO_E_CHECKBOX.RED).should('not.be.selected').then((radioRed) => {
+            if(radioRed) {
+                cy.get(radioRed).click()
+            }
+        })
     })
   
     it('Validar radioButton blue', () => {
+        cy.acessarRadioECheckbox()
+        cy.get(loc.RADIO_E_CHECKBOX.BLUE).should('not.be.selected').then((radioBlue) => {
+            if(radioBlue) {
+                cy.get(radioBlue).click()
+            }
+        })
     })
   
     it('Validar radioButton yellow', () => {
+        cy.acessarRadioECheckbox()
+        cy.get(loc.RADIO_E_CHECKBOX.YELLOW).should('not.be.selected').then((radioYellow) => {
+            if(radioYellow) {
+                cy.get(radioYellow).click()
+            }
+        })
     })
   
     it('Validar radioButton green', () => {
+        cy.acessarRadioECheckbox()
+        cy.get(loc.RADIO_E_CHECKBOX.GREEN).should('not.be.selected').then((radioGreen) => {
+            if(radioGreen) {
+                cy.get(radioGreen).click()
+            }
+        })
     })
   
     it('Validar checkBox purple', () => {
