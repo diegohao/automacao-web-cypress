@@ -72,10 +72,10 @@ const locators = {
     MSG_DISABLE: '.s9 > :nth-child(7)'
   },
   RADIO_E_CHECKBOX: {
-    RED: 'form > :nth-child(2) > label',
-    BLUE: 'form > :nth-child(3) > label',
-    YELLOW: 'form > :nth-child(5) > label',
-    GREEN: 'form > :nth-child(6) > label',
+    XP_RED: '//*[@id="red"]',
+    XP_BLUE: '//*[@id="blue"]',
+    XP_YELLOW: '//*[@id="yellow"]',
+    XP_GREEN: '//*[@id="green"]',
     XP_PURPLE: '//*[@id="purple"]',
     XP_GREY: '//*[@id="grey"]',
     BLACK: ':nth-child(2) > :nth-child(5) > label',
