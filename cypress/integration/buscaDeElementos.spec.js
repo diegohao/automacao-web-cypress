@@ -111,7 +111,7 @@ describe('Teste funcional na busca de elementos', () => {
         })
     })
   
-    it.only('Validar checkBox grey', () => {
+    it('Validar checkBox grey', () => {
         cy.acessarRadioECheckbox()
         cy.xpath(loc.RADIO_E_CHECKBOX.XP_GREY).should('not.be.checked').then((checkGrey) => {
             if(checkGrey) {
