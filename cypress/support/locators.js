@@ -78,8 +78,8 @@ const locators = {
     XP_GREEN: '//*[@id="green"]',
     XP_PURPLE: '//*[@id="purple"]',
     XP_GREY: '//*[@id="grey"]',
-    BLACK: ':nth-child(2) > :nth-child(5) > label',
-    WHITE: ':nth-child(2) > :nth-child(6) > label'
+    XP_BLACK: '//*[@id="black"]',
+    XP_WHITE: '//*[@id="white"]'
   }
 }
 
