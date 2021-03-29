@@ -124,9 +124,21 @@ describe('Teste funcional na busca de elementos', () => {
     })
   
     it('Validar checkBox black', () => {
+        cy.acessarRadioECheckbox()
+        cy.xpath(loc.RADIO_E_CHECKBOX.XP_BLACK).should('not.be.checked').then((checkBlack) => {
+            if(checkBlack) {
+                checkBlack.click()
+            }
+        })
     })
   
     it('Validar checkBox white', () => {
+        cy.acessarRadioECheckbox()
+        cy.xpath(loc.RADIO_E_CHECKBOX.XP_WHITE).should('not.be.checked').then((checkWhite) => {
+            if(checkWhite) {
+                checkWhite.click()
+            }
+        })
     })
   
     it('Validar checkBox black e white', () => {
