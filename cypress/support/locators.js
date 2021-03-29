@@ -76,8 +76,8 @@ const locators = {
     BLUE: 'form > :nth-child(3) > label',
     YELLOW: 'form > :nth-child(5) > label',
     GREEN: 'form > :nth-child(6) > label',
-    PURPLE: ':nth-child(2) > :nth-child(2) > label',
-    GREY: ':nth-child(2) > :nth-child(3) > label',
+    XP_PURPLE: '//*[@id="purple"]',
+    XP_GREY: '//*[@id="grey"]',
     BLACK: ':nth-child(2) > :nth-child(5) > label',
     WHITE: ':nth-child(2) > :nth-child(6) > label'
   }

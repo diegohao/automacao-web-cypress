@@ -102,20 +102,20 @@ describe('Teste funcional na busca de elementos', () => {
         })
     })
   
-    it.only('Validar checkBox purple', () => {
+    it('Validar checkBox purple', () => {
         cy.acessarRadioECheckbox()
-        cy.get(loc.RADIO_E_CHECKBOX.PURPLE).should('not.be.checked').then((checkPurple) => {
+        cy.xpath(loc.RADIO_E_CHECKBOX.XP_PURPLE).should('not.be.checked').then((checkPurple) => {
             if(checkPurple) {
-                cy.get(checkPurple).check()
+                checkPurple.click()
             }
         })
     })
   
-    it('Validar checkBox grey', () => {
+    it.only('Validar checkBox grey', () => {
         cy.acessarRadioECheckbox()
-        cy.get(loc.RADIO_E_CHECKBOX.GREY).should('not.be.checked').then((checkGrey) => {
+        cy.xpath(loc.RADIO_E_CHECKBOX.XP_GREY).should('not.be.checked').then((checkGrey) => {
             if(checkGrey) {
-                cy.get(checkGrey).check()
+                checkGrey.click()
             }
         })
     })
