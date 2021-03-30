@@ -80,6 +80,11 @@ const locators = {
     XP_GREY: '//*[@id="grey"]',
     XP_BLACK: '//*[@id="black"]',
     XP_WHITE: '//*[@id="white"]'
+  },
+  DROPDOWN: {
+    MAIL_BOX: '.row > .btn',
+    INBOX: '#dropdown1',
+    MSG_INBOX: '#div1 > h5'
   }
 }
 
