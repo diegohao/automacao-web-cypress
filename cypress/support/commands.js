@@ -37,3 +37,10 @@ Cypress.Commands.add('acessarRadioECheckbox', () => {
         return false
     })
 })
+
+Cypress.Commands.add('acessarDropdownESelect', () => {
+    cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.DROPDOWN_E_SELECT).click()
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        return false
+    })
+})

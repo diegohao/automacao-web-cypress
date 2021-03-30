@@ -102,7 +102,7 @@ describe('Teste funcional na busca de elementos', () => {
         })
     })
   
-    it.only('Validar checkBox purple', () => {
+    it('Validar checkBox purple', () => {
         cy.acessarRadioECheckbox()
         cy.xpath(loc.RADIO_E_CHECKBOX.XP_PURPLE).should('not.be.checked').then((checkPurple) => {
             if(checkPurple) {
@@ -119,7 +119,7 @@ describe('Teste funcional na busca de elementos', () => {
             }
         })
     })
-  
+    //TODO
     it('Validar checkBox purple e grey', () => {
     })
   
@@ -140,7 +140,18 @@ describe('Teste funcional na busca de elementos', () => {
             }
         })
     })
-  
+    //TODO
     it('Validar checkBox black e white', () => {
     })
+
+    it.only('Validar dropdown Inbox', () => {
+        cy.acessarDropdownESelect()
+        cy.get('.row > .btn').click()
+        cy.get('#dropdown1').as('inbox')
+        if(cy.get('@inbox').click()) {
+            cy.get('#div1 > h5').should('contain', 'Inbox')
+        }
+    })
+
+    //TODO criar outros cenários com dropdown
 })
