@@ -146,10 +146,10 @@ describe('Teste funcional na busca de elementos', () => {
 
     it.only('Validar dropdown Inbox', () => {
         cy.acessarDropdownESelect()
-        cy.get('.row > .btn').click()
-        cy.get('#dropdown1').as('inbox')
+        cy.get(loc.DROPDOWN.MAIL_BOX).click()
+        cy.get(loc.DROPDOWN.INBOX).as('inbox')
         if(cy.get('@inbox').click()) {
-            cy.get('#div1 > h5').should('contain', 'Inbox')
+            cy.get(loc.DROPDOWN.MSG_INBOX).should('contain', 'Inbox')
         }
     })
 
