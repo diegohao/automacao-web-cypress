@@ -119,9 +119,6 @@ describe('Teste funcional na busca de elementos', () => {
             }
         })
     })
-    //TODO
-    it('Validar checkBox purple e grey', () => {
-    })
   
     it('Validar checkBox black', () => {
         cy.acessarRadioECheckbox()
@@ -140,18 +137,47 @@ describe('Teste funcional na busca de elementos', () => {
             }
         })
     })
-    //TODO
-    it('Validar checkBox black e white', () => {
-    })
 
-    it.only('Validar dropdown Inbox', () => {
+    it('Validar dropdown Inbox', () => {
         cy.acessarDropdownESelect()
         cy.get(loc.DROPDOWN.MAIL_BOX).click()
         cy.get(loc.DROPDOWN.INBOX).as('inbox')
         if(cy.get('@inbox').click()) {
-            cy.get(loc.DROPDOWN.MSG_INBOX).should('contain', 'Inbox')
+            cy.get(loc.DROPDOWN.MSG_INBOX).should('exist')
         }
     })
 
-    //TODO criar outros cenários com dropdown
+    it('Validar dropdown Unread', () => {
+        cy.acessarDropdownESelect()
+        cy.get(loc.DROPDOWN.MAIL_BOX).click()
+        cy.get(loc.DROPDOWN.UNREAD).as('unread')
+        if(cy.get('@unread').click()) {
+            cy.get(loc.DROPDOWN.MSG_UNREAD).should('exist')
+        }
+    })
+
+    it('Validar dropdown Sent', () => {
+        cy.acessarDropdownESelect()
+        cy.get(loc.DROPDOWN.MAIL_BOX).click()
+        cy.get(loc.DROPDOWN.SENT).as('sent')
+        if(cy.get('@sent').click()) {
+            cy.get(loc.DROPDOWN.MSG_SENT).should('exist')
+        }
+    })
+
+    it('Validar dropdown Outbox', () => {
+        cy.acessarDropdownESelect()
+        cy.get(loc.DROPDOWN.MAIL_BOX).click()
+        cy.get(loc.DROPDOWN.OUTBOX).as('outbox')
+        if(cy.get('@outbox').click()) {
+            cy.get(loc.DROPDOWN.MSG_OUTBOX).should('exist')
+        }
+    })
+
+    it.only('Validar select desenho favorito', () => {
+        cy.acessarDropdownESelect()
+        cy.get(':nth-child(1) > .select-wrapper > input.select-dropdown').click()
+        //TODO continuar implementação
+    })
+
 })

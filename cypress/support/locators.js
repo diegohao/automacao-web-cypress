@@ -84,7 +84,13 @@ const locators = {
   DROPDOWN: {
     MAIL_BOX: '.row > .btn',
     INBOX: '#dropdown1',
-    MSG_INBOX: '#div1 > h5'
+    UNREAD: '#dropdown2',
+    SENT: '#dropdown3',
+    OUTBOX: '#dropdown4',
+    MSG_INBOX: '#div1 > h5',
+    MSG_UNREAD: '#div2 > h5',
+    MSG_SENT: '#div3 > h5',
+    MSG_OUTBOX: '#div4 > h5'
   }
 }
 
