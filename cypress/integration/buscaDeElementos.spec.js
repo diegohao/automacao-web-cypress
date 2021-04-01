@@ -5,7 +5,7 @@ import loc from '../support/locators'
 describe('Teste funcional na busca de elementos', () => {
     beforeEach(() => {
         cy.visit('/')
-        cy.contains('Busca de elementos').click()
+        cy.xpath('/html/body/div[2]/div[1]/ul/li[2]/a').click()
     })
 
     it('Link: Ok 200 - Success', () => {
