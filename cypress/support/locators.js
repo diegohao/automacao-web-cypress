@@ -12,6 +12,12 @@ const locators = {
       DROPDOWN_E_SELECT: '.collapsible-body > ul > :nth-child(5) > a',
       TEXTOS: '.collapsible-body > ul > :nth-child(6) > a',
       TABELA: ':nth-child(7) > a'
+    },
+    MUDANCA_DE_FOCO: {
+      ALERT: '.active > .collapsible-body > ul > :nth-child(1) > a',
+      IFRAME: '.active > .collapsible-body > ul > :nth-child(2) > a',
+      JANELA: '.active > .collapsible-body > ul > :nth-child(3) > a',
+      MODAL: '.active > .collapsible-body > ul > :nth-child(4) > a'
     }
   },
   CRIAR_USUARIOS: {

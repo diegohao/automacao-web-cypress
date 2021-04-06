@@ -196,5 +196,4 @@ describe('Teste funcional na busca de elementos', () => {
         cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.TABELA).click()
         cy.xpath(loc.TABELA.LINHA).should('contain', 'Leite')
     })
-
 })
