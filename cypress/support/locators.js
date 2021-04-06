@@ -91,6 +91,9 @@ const locators = {
     MSG_UNREAD: '#div2 > h5',
     MSG_SENT: '#div3 > h5',
     MSG_OUTBOX: '#div4 > h5'
+  },
+  TABELA: {
+    LINHA: '/html/body/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[5]'
   }
 }
 

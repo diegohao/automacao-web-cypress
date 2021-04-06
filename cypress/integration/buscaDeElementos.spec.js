@@ -174,10 +174,27 @@ describe('Teste funcional na busca de elementos', () => {
         }
     })
 
-    it.only('Validar select desenho favorito', () => {
+    it('Validar select desenho favorito', () => {
         cy.acessarDropdownESelect()
-        cy.get(':nth-child(1) > .select-wrapper > input.select-dropdown').click()
+        cy.get(':nth-child(1) > .select-wrapper > input.select-dropdown').click()        
         //TODO continuar implementação
+    })
+
+    it('Validar select de seleções de futebol', () => {
+        //TODO implementar
+    })
+
+    it('Validar select de gênero', () => {
+        //TODO implementar
+    })
+
+    it('Validar select de browser favorito', () => {
+        //TODO implementar
+    })
+
+    it.only('Validar tabela', () => {
+        cy.get(loc.MENU.BUSCA_DE_ELEMENTOS.TABELA).click()
+        cy.xpath(loc.TABELA.LINHA).should('contain', 'Leite')
     })
 
 })
