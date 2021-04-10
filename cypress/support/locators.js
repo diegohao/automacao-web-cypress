@@ -100,6 +100,10 @@ const locators = {
   },
   TABELA: {
     LINHA: '/html/body/div[2]/div[2]/div[2]/div[2]/table/tbody/tr[5]'
+  },
+  ALERT: {
+    ALERT_JS: 'ul > :nth-child(1) > .btn',
+    CONFIRM_JS: ':nth-child(4) > .btn'
   }
 }
 
