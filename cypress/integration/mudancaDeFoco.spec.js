@@ -23,4 +23,15 @@ describe('Teste funcional na busca de elementos', () => {
       expect(msg).to.be.equal('Eu sou uma confirmação JS!')
     })
   })
+
+  it.only('Validar iFrame', () => {
+    cy.get(loc.MENU.MUDANCA_DE_FOCO.IFRAME).click()
+    cy.get('#id_do_iframe').then(iframe => {
+      const body = iframe.contents().find('body')
+      cy.wrap(body).find('#first_name')
+      .type('Diego')
+      .should('have.value', 'Diego')
+    })
+  })
+
 })
