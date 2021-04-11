@@ -2,7 +2,7 @@
 
 import loc from '../support/locators'
 
-describe('Teste funcional na busca de elementos', () => {
+describe('Teste funcional de mudança de foco', () => {
   beforeEach(() => {
     cy.visit('/')
     cy.xpath('/html/body/div[2]/div[1]/ul/li[3]/a').click()
