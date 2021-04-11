@@ -18,6 +18,11 @@ const locators = {
       IFRAME: '.active > .collapsible-body > ul > :nth-child(2) > a',
       JANELA: '.active > .collapsible-body > ul > :nth-child(3) > a',
       MODAL: '.active > .collapsible-body > ul > :nth-child(4) > a'
+    },
+    WIDGETS: {
+      ACCORDION: '.active > .collapsible-body > ul > :nth-child(1) > a',
+      AUTOCOMPLETE: '.active > .collapsible-body > ul > :nth-child(2) > a',
+      DATAPICKER: '.active > .collapsible-body > ul > :nth-child(3) > a'
     }
   },
   CRIAR_USUARIOS: {
