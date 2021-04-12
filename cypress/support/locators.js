@@ -21,7 +21,7 @@ const locators = {
     },
     WIDGETS: {
       ACCORDION: '.active > .collapsible-body > ul > :nth-child(1) > a',
-      AUTOCOMPLETE: '.active > .collapsible-body > ul > :nth-child(2) > a',
+      AUTOCOMPLETE: '.active > .collapsible-body > ul > :nth-child(2)',
       DATAPICKER: '.active > .collapsible-body > ul > :nth-child(3) > a'
     }
   },
@@ -109,7 +109,14 @@ const locators = {
   ALERT: {
     ALERT_JS: 'ul > :nth-child(1) > .btn',
     CONFIRM_JS: ':nth-child(4) > .btn'
-  }
+  },
+  ACCORDION: {
+    FIRST: ':nth-child(3) > :nth-child(1) > .collapsible > :nth-child(1) > .collapsible-header',
+    SECOND: ':nth-child(3) > :nth-child(1) > .collapsible > :nth-child(2) > .collapsible-header',
+    THIRD: '/html/body/div[2]/div[2]/div[3]/div/ul/li[3]/div[1]',
+    THIRD_TEXT: '.active > .collapsible-body > span'
+  },
+  AUTOCOMPLETE: '#autocomplete-input'
 }
 
 export default locators;

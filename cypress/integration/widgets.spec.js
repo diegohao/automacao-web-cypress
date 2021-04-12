@@ -10,9 +10,15 @@ describe('Teste funcional de widgets', () => {
 
     it('Validar accordion', () => {
         cy.get(loc.MENU.WIDGETS.ACCORDION).click()
-        cy.get(':nth-child(3) > :nth-child(1) > .collapsible > :nth-child(1) > .collapsible-header').should('be.visible')
-        cy.get(':nth-child(3) > :nth-child(1) > .collapsible > :nth-child(2) > .collapsible-header').should('have.class', 'collapsible-header')
-        cy.xpath('/html/body/div[2]/div[2]/div[3]/div/ul/li[3]/div[1]').click()
-        //TODO continuar implementação
+        cy.get(loc.ACCORDION.FIRST).should('be.visible')
+        cy.get(loc.ACCORDION.SECOND).should('have.class', 'collapsible-header')
+        cy.xpath(loc.ACCORDION.THIRD).click()
+        cy.get(loc.ACCORDION.THIRD_TEXT).should('exist')
+    })
+
+    it.only('Validar autocomplete', ()=> {
+        cy.get(loc.MENU.WIDGETS.AUTOCOMPLETE).click()
+        cy.get(loc.AUTOCOMPLETE).type('Minas')
+        cy.contains('Minas Gerais').should('exist').click()
     })
 })
