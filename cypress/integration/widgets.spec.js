@@ -16,9 +16,15 @@ describe('Teste funcional de widgets', () => {
         cy.get(loc.ACCORDION.THIRD_TEXT).should('exist')
     })
 
-    it.only('Validar autocomplete', ()=> {
+    it('Validar autocomplete', ()=> {
         cy.get(loc.MENU.WIDGETS.AUTOCOMPLETE).click()
         cy.get(loc.AUTOCOMPLETE).type('Minas')
         cy.contains('Minas Gerais').should('exist').click()
+    })
+
+    it.only('Validar datepicker', () => {
+        cy.get(loc.MENU.WIDGETS.DATEPICKER).click()
+        cy.get('#datepicker').click()
+        //TODO implementar datepicker
     })
 })

@@ -22,7 +22,7 @@ const locators = {
     WIDGETS: {
       ACCORDION: '.active > .collapsible-body > ul > :nth-child(1) > a',
       AUTOCOMPLETE: '.active > .collapsible-body > ul > :nth-child(2)',
-      DATAPICKER: '.active > .collapsible-body > ul > :nth-child(3) > a'
+      DATEPICKER: '.active > .collapsible-body > ul > :nth-child(3) > a'
     }
   },
   CRIAR_USUARIOS: {
